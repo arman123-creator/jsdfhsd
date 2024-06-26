@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somethingstosay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bgimage5.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .buttons-container {
+            display: grid;
+            gap: 20px;
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #dc3545;
+            font-size: 2em;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+
+        .buttons-container {
+            display: grid;
+            gap: 20px;
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .touchable-opacity {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+        .video-container {
+            max-width: 100%;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .touchable-opacity:hover {
+            opacity: 0.7;
+        }
+
+        .touchable-opacity:active {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video controls autoplay loop poster="poster.jpg">
+            <source src="Images/WhatsApp Video 2024-06-26 at 9.53.02 AM.mp4" type="video/mp4">
+            
+            
+        </video>
+    </div>
+    <div class="buttons-container">
+        <a href="Main.html" class="touchable-opacity">BACK</a>
+        
+    </div>
+</body>
+
+</html>
